@@ -1,0 +1,31 @@
+Declaration of a pointer variable
+data_type *pname;
+
+Assiging Address to a pointer variable
+int *iptr,age=30;
+iptr = &age;
+
+Dereferencing Pointer Variables
+int a = 87
+int *p1 = &a;
+
+*p1 = 9; is equivalent to a=9;
+(*p1)++; is equivalent to a++;
+x = *p1 + 10; is equivalent to x = a +10;
+printf("%d",*p1); is equivalent to printf("%d",a);
+scanf("%d",p1) is equivalent to scanf("%d",&a);
+
+Pointer to Pointer
+data_type **pptr;
+int a=5;
+int *pa = &a;
+int **ppa = &pa;
+
+Pointers and One Dimensional Arrays
+*(arr+i) -> arr[i]
+
+Function Returning Pointer
+type *func(type1,type2,......)
+
+Array of Pointers
+datatype *arrayname[size];
