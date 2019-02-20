@@ -1,0 +1,27 @@
+1.malloc()
+ declaration : void *malloc(size_t size);
+ ptr=(datatype *)malloc(specified size);
+ 
+2.calloc()
+   declaration:void *calloc(size_t n,size_t size);
+   equivalent code
+   ptr=(int *)calloc(5,sizeof(int));
+   ptr=(int *)malloc(5*sizeof(int));
+   difference:
+  1.Calloc takes two arguments.The first arguments specifies the number of blocks and second one specifies the size of each block.
+  2.The other difference between calloc() and malloc() is hat the memory allocated by malloc() contains garbage value while the memory allocated by calloc() is initialized to zero.
+   similarilties:
+   like malloc,calloc() also returns NULL if there is not sufficient memory available in the heap.
+   
+3.realloc()
+   declaration:void *realloc(void *ptr,size_t newsize);
+   The function realloc() is used to change the size of the memory block.It alters the size of the memory block without losing old data.
+   This function takes two arguments,first is a pointer to the block of memory that was previously allocated by malloc() or calloc()
+   and second one is he new size for that block.for example-
+   ptr=(int *)malloc(size);
+   ptr=(int *)realloc(ptr,newsize);
+   
+4.free()
+   Declaration:void free(void *p);
+   
+   
